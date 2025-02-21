@@ -1,0 +1,110 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-container2 {
+    width: 500px;
+}
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    padding: 1rem;
+}
+.container h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Alinea los elementos a la izquierda */
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link to switch forms */
+p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+button#showLogin,
+button#showSignup {
+    background-color: transparent;
+    color: #4caf50;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button#showLogin:hover,
+button#showSignup:hover {
+    color: #45a049;
+}
+
+/* Form transitions */
+#signupForm,
+#loginForm {
+    transition: all 0.3s ease;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
